@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Worked Hours</title>
+    <link rel="icon" href="img/favicon.png" type="icon" sizes="16x16">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/clockpicker.css" rel="stylesheet">
+    <link href="css/standalone.css" rel="stylesheet">
+    <link href="css/devicon.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/clockpicker.js"></script>
+    <script src="js/notify.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fixed">            
+            <div class="navbar-header">                
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Worked Hours</div>
+            <div class="panel-body">
+
+                <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                    <input type="text" class="form-control" placeholder="Check-In" id="checkIn">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+
+                <br/>
+
+                <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                    <input type="text" class="form-control" placeholder="Check-Out" id="checkOut">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+
+                <br/>
+
+                <div class="input-group clockpicker" data-placement="left" data-align="top" data-autoclose="true">
+                    <input type="text" class="form-control" placeholder="Lunch" id="lunch">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+
+                <br/>
+
+                <button class="btn btn-default" id="btnCalculate">Calculate</button>
+
+                <script type="text/javascript">
+                    $('.clockpicker').clockpicker();
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/enderson.amorim.5">
+                                    <i class="devicon-facebook-plain"></i>   </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/endersonramorim">
+                                    <i class="devicon-twitter-plain"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/endersonra">
+                                    <i class="devicon-github-plain"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p> Copyright © 2018 -
+                        <a href="https://endersonra.github.io/">Enderson Rufino Amorim</a>
+                    </p>
+                </div>                
+            </div>            
+        </div>        
+    </footer>
+    <script src="js/clock.js"></script>
+</body>
+</html>
