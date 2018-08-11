@@ -28,16 +28,20 @@
 	color: #7F8C8D;
 }
 .footer ul li a {
-	padding: 0 0 5px 0;
+	padding: 0 0 0px 0;
 	display: block;
 }
 .footer a {
-	color: #78828D;
+	color: #2c3e50;
 	text-decoration: none;
 }
 
-
-
+.footer p {
+	margin-top: 20px;
+	margin-left: 70;
+	color: #78828D;
+	text-decoration: none;
+}
 
 .social li {
 	background: none repeat scroll 0 0 #B5B5B5;
